@@ -1,0 +1,32 @@
+@import './~sass/variables';
+.base{
+    display:flex;
+   align-content: flex-end;
+    margin-top:5px;
+    text-align: center;
+    font-family: 'Exo', sans-serif;
+}
+.menu-item{
+    font-size:1em;
+    flex-grow:3;
+    margin-top:10px;
+    //vertical-align: bottom;
+}
+
+.item-0{
+    font-size: 2em;
+    flex-grow:16;
+}
+
+.item-1 {
+
+}
+.item-2 {
+
+}
+.item-3 {
+
+}
+.item-4 {
+
+}

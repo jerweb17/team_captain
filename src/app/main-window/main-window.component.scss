@@ -1,0 +1,75 @@
+@import '~sass/variables';
+.mainsection{
+    background-color: $back-color;
+    min-height:100%;
+    max-height:auto;
+
+}
+.display{
+    display:flex;
+    flex-wrap:wrap;
+    padding:0px 4px;
+    display:flex;
+    justify-content: center;
+    background-color:$back-color;
+    height: 100%;
+    width:100%;
+}
+.picturebox-v{
+    flex:23%;
+    max-width: 23%;
+    padding:4px 8px;
+    
+}
+.picturebox-h{
+    flex:41%;
+    max-width: 41%;
+    padding:4px 8px;
+    
+}
+iframe{width:70%;
+    }
+img{
+    margin-top:8px;
+    vertical-align: middle;
+    width: 100%;
+}
+img:last-of-type{
+    margin-bottom: 8px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 1024px) {
+    .picturebox {
+        flex: 31%;
+        max-width: 31%;
+        padding:4px 8px;
+    }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 768px) {
+    .picturebox {
+        flex: 48%;
+        max-width: 48%;
+        padding:2px 2px;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 480px) {
+    .picturebox {
+        flex: 100%;
+        max-width: 100%;
+        padding:1px 1px;
+    }
+}
+.message{
+    background-color:$warn-color;
+}
+
+.side{
+    flex-grow:1;
+    background-color:$admin-color;
+}
+

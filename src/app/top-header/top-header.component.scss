@@ -1,0 +1,33 @@
+@charset 'utf-8';
+@import './~sass/variables';
+
+
+.base{
+    display:flex;
+    align-content: flex-end;
+    margin-top:5px;
+}
+.item{
+    margin-top:4px;
+}
+.item-0{
+    flex-grow:50;
+}
+
+.item-1 {
+    flex-grow:2;
+    
+    color: white !important;
+}
+
+.item-2 {
+    flex-grow:2;
+    
+    color: white !important;
+}
+
+.item-3 {
+    flex-grow:2;
+
+    color: white !important;
+}
