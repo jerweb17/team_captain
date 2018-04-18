@@ -2,13 +2,14 @@
 .homebase{
     display: -ms-grid;
     display:grid;
-    grid-template-rows: 35px 55px 2fr 10fr 35px;
-    -ms-grid-rows:35px 55px 2fr 10fr 35px;
+    grid-template-rows: 28px 85px 2fr 10fr 35px;
+    -ms-grid-rows:28px 85px 2fr 10fr 35px;
     background-color:purple;
     grid-template-columns:1fr 7fr;
     -ms-grid-columns:1fr 7fr;
     margin:-8px;
     min-height: 100vh;
+    max-height:100vh;
 }
 .topheader{
     grid-row: 1;
@@ -35,6 +36,7 @@
     -ms-grid-column:1;
     -ms-grid-column-span:2;
     background-color:$back-color;
+   // padding-left:20px;
 }
 .foot{
     grid-row:5;

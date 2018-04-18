@@ -2,20 +2,25 @@
 .base{
     display:flex;
    align-content: flex-end;
-    margin-top:5px;
+    //margin-top:5px;
     text-align: center;
     font-family: 'Exo', sans-serif;
+    border-bottom: 1px solid rgb(218, 207, 207) !important;
+
 }
 .menu-item{
     font-size:1em;
     flex-grow:3;
-    margin-top:10px;
+    margin-top:16px;
     //vertical-align: bottom;
 }
 
-.item-0{
-    font-size: 2em;
-    flex-grow:16;
+.icon{
+    padding-left:80px;
+    height:85px;
+    //flex-grow:16;
+    border:0px;
+    outline:0;
 }
 
 .item-1 {

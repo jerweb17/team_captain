@@ -1,0 +1,7 @@
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+      display: block;
+      content: "";
+      width: $width;
+      height:($width/$height) * 100%;
+  }

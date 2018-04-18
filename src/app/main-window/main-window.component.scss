@@ -1,20 +1,94 @@
 @import '~sass/variables';
+@import '~sass/mixins';
 .mainsection{
     background-color: $back-color;
-    min-height:100%;
-    max-height:auto;
-
+    height:100%;
+    display: -ms-grid;
+    display:grid;
+    grid-template-rows: 5% 2fr 2fr 2fr 2fr 2fr 5%;
+    -ms-grid-rows:5% 2fr 2fr 2fr 2fr 2fr 5%;
+    grid-template-columns:12% 2fr 2fr 2fr 2fr 2fr 2fr 12%;
+    -ms-grid-columns:1fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    margin:0px -12px;
+    background:url('../../assets/images/yos1.jpg') no-repeat center fixed;
+}
+.overlay{
+    grid-row:1/8;
+    -ms-grid-row:1;
+    -ms-grid-row-span: 7;
+    grid-column:1/9;
+    -ms-grid-column:1;
+    -ms-grid-column-span:8;
+    background:rgba(200,200,200,0.5);
 }
 .display{
-    display:flex;
-    flex-wrap:wrap;
-    padding:0px 4px;
-    display:flex;
-    justify-content: center;
+    grid-row:3/4;
+    -ms-grid-row:2;
+    -ms-grid-row-span: 1;
+    grid-column:2/8;
+    -ms-grid-column:2;
+    -ms-grid-column-span:6;
+     padding:4px;
     background-color:$back-color;
-    height: 100%;
-    width:100%;
+    display: -ms-grid;
+    display:grid;
+    grid-template-rows: 1% 56% 40% 3%;
+    -ms-grid-rows:10% 2fr 2fr 2fr 10%;
+    grid-template-columns:8% 2fr 2fr 2fr 8%;
+    -ms-grid-columns:1fr 2fr 2fr 2fr 2fr 1fr;
+    border-radius:8px;
 }
+
+.biglogo{
+    grid-row:2/3;
+    -ms-grid-row:2;
+    -ms-grid-row-span: 1;
+    grid-column:2/5;
+    -ms-grid-column:2;
+    -ms-grid-column-span:3;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.logo2
+{
+    width:80%;
+    @include aspect-ratio($main-logo-aspect,1);
+}
+.tagline{
+    grid-row:3/4;
+    -ms-grid-row:3;
+    -ms-grid-row-span: 1;
+    grid-column:2/5;
+    -ms-grid-column:3;
+    -ms-grid-column-span:3;
+   // height:100px;
+   display:flex;
+   justify-content:center;
+}
+.modernlogo{
+    width:50%;
+    @include aspect-ratio($modern-logo-aspect,1);
+}
+.controlbox{
+    grid-row:6/7;
+    -ms-grid-row:3;
+    -ms-grid-row-span: 1;
+    grid-column:4/6;
+    -ms-grid-column:3;
+    -ms-grid-column-span:3;
+    background-color:$back-color;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:8px;
+}
+.controls .btn{
+     margin:2px 3px !important;
+
+}
+
+
 .picturebox-v{
     flex:23%;
     max-width: 23%;
@@ -27,16 +101,14 @@
     padding:4px 8px;
     
 }
-iframe{width:70%;
-    }
-img{
-    margin-top:8px;
-    vertical-align: middle;
-    width: 100%;
-}
-img:last-of-type{
-    margin-bottom: 8px;
-}
+
+// img{
+//     vertical-align: middle;
+//     width: 100%;
+// }
+// img:last-of-type{
+//     margin-bottom: 8px;
+// }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 1024px) {
@@ -73,3 +145,7 @@ img:last-of-type{
     background-color:$admin-color;
 }
 
+btn{
+    margin:10px !important;
+    padding:10px !important;
+}
