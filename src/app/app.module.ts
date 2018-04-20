@@ -24,6 +24,8 @@ import { AboutComponent } from './about/about.component';
 import { DataService } from './data.service';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+import { BrandBoxComponent } from './brand-box/brand-box.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -45,13 +47,16 @@ import { HttpClientModule } from '@angular/common/http';
     WelcomeComponent,
     LoginComponent,
     LogoutComponent,
-    AboutComponent
+    AboutComponent,
+    BrandBoxComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

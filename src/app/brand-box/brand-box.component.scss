@@ -1,0 +1,41 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+
+.box{
+    display:flex;
+    flex-direction: column;
+    background-color:$back-color;
+    border-radius:8px;
+}
+
+.mainlogo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+:host /deep/ .logo1{
+     display: flex;
+    justify-content:center;
+    align-items:center;
+}
+:host /deep/ .mainlogo  img
+{
+    max-width:95%;
+}
+.tagline{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+}
+:host /deep/ .logo2{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
+}
+:host /deep/ .tagline .logo2 img
+{
+    width:50%;
+    @include aspect-ratio($modern-logo-aspect,1);
+}
+
